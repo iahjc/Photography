@@ -1,0 +1,144 @@
+#header{
+	width:pxToRem(750);
+	height:pxToRem(128);
+	background:$header-background-color;
+
+
+	.head-icon{
+		width:pxToRem(144);
+		height:pxToRem(128);
+		position:absolute;
+		left:0;
+		top:0;
+		display: -webkit-box;
+		display: box;
+		-webkit-box-orient:vertical;
+		box-orient:vertical;
+
+
+		display: -webkit-flex;
+		display: flex;
+		-webkit-flex-direction:column;
+		flex-direction:column;
+
+
+		span{
+			height:pxToRem(3);
+			width:pxToRem(36);
+			margin-left:pxToRem(54);
+			background:$header-icon-background-color;
+			display: inline-block;
+			margin-bottom:pxToRem(10);
+			&:nth-of-type(1){
+				margin-top:pxToRem(47);
+			}
+			&:nth-of-type(2){
+				width:pxToRem(30);
+			}
+		}
+	}
+
+	.head-title{
+		width:pxToRem(750);
+		height: pxToRem(128);
+		text-align:center;
+		line-height:pxToRem(128);
+		font-size: pxToRem(36);
+		color:$header-title-color;
+	}
+}
+
+
+.head-info{
+	width:pxToRem(604);
+	height:100%;
+	position:absolute;
+	left:0;
+	top:0;
+	bottom:0;
+	background:$header-info-background-color;
+	padding-left:pxToRem(100);
+	z-index:100;
+	display:none;
+	
+	.user-info{
+		width:pxToRem(406);
+		height: pxToRem(120);
+		display: -webkit-box;
+		display: box;
+		display: -webkit-flex;
+		display: flex;
+		margin-top:pxToRem(146);
+		
+		.user-info-img{
+			width:pxToRem(120);
+			height: pxToRem(120);
+			@include rounded_borders(pxToRem(120));
+			overflow: hidden;
+			img{
+				width:100%;
+				display: inline-block;
+				vertical-align: middle;
+			}
+		}
+
+		.user-info-msg{
+			height: pxToRem(120);
+			width:pxToRem(280);
+			
+
+			p{
+				margin-left:pxToRem(20);
+				&:nth-of-type(1){
+					font-size: pxToRem(30);
+					color:$user-info-p1;
+					line-height: pxToRem(40);
+					margin-top:pxToRem((120-40-32)/2);
+				}
+
+				&:nth-of-type(2){
+					color:$user-info-p2;
+					font-size: pxToRem(24);
+					line-height: pxToRem(32);
+
+				}
+			}
+		}
+	}
+
+	.nav_list{
+		width:pxToRem(406);
+		margin-top:pxToRem(90);
+		ul{
+			width:pxToRem(406);
+
+			li{
+				height: pxToRem(74);
+				a{
+					height: pxToRem(74);
+					display: inline-block;
+					font-size: pxToRem(30);
+					line-height: pxToRem(74);
+					color:$nav-list-font-color;
+					&:hover{
+						text-decoration:none;
+					}
+				}
+
+				span{
+					display: inline-block;
+					height: pxToRem(32);
+					width: pxToRem(32);
+					overflow: hidden;
+					line-height: pxToRem(32);
+					text-align: center;
+					@include rounded_borders(pxToRem(32));
+					background-color:$nav-list-span-bg;
+					color:$nav-list-span-font-color;
+					font-size:pxToRem(24);
+					margin-left:pxToRem(160);
+				}
+			}
+		}
+	}
+}

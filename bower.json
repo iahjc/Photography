@@ -1,0 +1,25 @@
+{
+  "name": "photography",
+  "description": "photography",
+  "main": "index.js",
+  "license": "ISC",
+  "homepage": "",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular": "^1.6.5",
+    "angular-ui-router": "^1.0.5",
+    "bootstrap": "^3.3.7",
+    "normalize-strings": "normalize#^1.1.0"
+  },
+  "devDependencies": {
+    "requirejs": "^2.3.4",
+    "angular-ui-router": "^1.0.5"
+  }
+}

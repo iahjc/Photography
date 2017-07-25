@@ -1,0 +1,39 @@
+.ph_return{
+	width:pxToRem(100);
+	height:pxToRem(100);
+	text-align:center;
+	line-height:pxToRem(60);
+	span{
+		width:pxToRem(40);
+		height: pxToRem(3);
+		background: $ph-return-bg-color;
+		display: inline-block;
+		
+			
+		&:before{
+			content:" ";
+			width:pxToRem(24);
+			height: pxToRem(3);
+			display: block;
+			background:$ph-return-bg-color;
+			-webkit-transform: rotate(45deg);
+			transform:rotate(45deg);
+
+			-webkit-transform-origin:left center;
+			transform-origin: left center;
+		}
+
+		&:after{
+			content:"";
+			width: pxToRem(25);
+			height: pxToRem(3);
+			display: block;
+			background:$ph-return-bg-color;
+			-webkit-transform: rotate(-45deg);
+			transform:rotate(-45deg);
+
+			-webkit-transform-origin:left center;
+			transform-origin: left center;
+		}
+	}
+}

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="app">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,user-scalable=no"/>
+	<title>摄影社区</title>
+	<link rel="stylesheet" href="vendor/bootstrap/dist/css/bootstrap.css"/>
+	<link rel="stylesheet" href="css/main.css"/>
+	<script>
+		
+		setFontSize();
+		window.addEventListener("resize",setFontSize,false);
+
+		function setFontSize (){
+			var oHtml = document.getElementsByTagName("html")[0];
+			oHtml.style.fontSize = document.documentElement.clientWidth/15 +"px";
+		}
+	</script>
+</head>
+<body>
+
+	<div ui-view>
+
+	</div>
+	<script src="vendor/angular/angular.min.js" charset="utf-8"></script>
+	<script src="vendor/angular-ui-router/release/angular-ui-router.min.js"></script>
+	<script src="js/index.js"></script>
+</body>
+</html>

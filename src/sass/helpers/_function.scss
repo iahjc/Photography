@@ -1,0 +1,14 @@
+/*! 转换rem*/
+@function pxToRem($size){
+	@return  $size*1px/$default-layout-rem-size *1rem;
+}
+
+/*! 跨浏览器圆角实现*/
+@mixin rounded_borders($rounding:5px){
+	-moz-border-radius:$rounding;
+	-webkit-border-radius:$rounding;
+	-khtml-border-radius:$rounding;
+	-o-border-radius:$rounding;
+
+	border-radius:$rounding;
+}

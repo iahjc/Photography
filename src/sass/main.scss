@@ -1,0 +1,56 @@
+//模块介绍
+//base :放置一些基本样式的scss文件，比如重置样式_normalize.scss，基本样式_base.scss,文本排版样式_typography.scss
+//components:放置一些公用组件，比如：按钮_buttons.scss,表单_form.scss,表格_tables.scss,选项卡_tabs.scss等
+//helpers:放置一些辅助功能性文件，比如：_css3.scss,_variables.scss,_mixins.scss,_helpers.scss,_function.scss
+//layout: 放置一些跟页面布局相关的，比如：_layout.scss,_header.scss,_footer.scss,_slider.scss等等
+//pages:放置跟具体项目页面相关的样式文件
+//themes:对于一些有前后台的页面，或者需换肤的项目，就可以将相关文件放置在这里。
+//vendors:引用外部插件或者框架的scss文件，比如_bootstrap.scss,_foundation.scss.
+//style.scss 这是主样式文件，最终编译，就编译这个文件。当然根据项目大小，可做一些其他处理。比如针对不同的页面，创建不同的page_XXX.scss文件
+
+
+/*! Vendor*/
+@import 
+	"compass"           
+// ,	"susy"      		 
+// ,	"breakpoint"		
+ ,	"compass/reset"     
+// ,	"normalize-version"
+// ,   "normalize/base"
+// ,	"normalize/links"
+// , 	"normalize/html5"
+,		"compass/css3"
+;
+
+/*! Helpers*/
+@import
+	"helpers/variables"
+,	"helpers/function"
+;
+
+/*! Base*/
+@import
+	"base/base"
+;
+
+/*! Components*/
+@import
+	"components/buttons"
+, 	"components/photo-list"
+
+ ;
+
+/*! Layout*/
+@import 
+	"layout/header"
+;
+
+
+
+
+/*! Pages*/
+@import
+	"pages/home"
+,	"pages/login"
+,	"pages/profile"
+;
